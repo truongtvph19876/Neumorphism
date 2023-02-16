@@ -1,0 +1,16 @@
+{
+  "name": "truongtv26",
+  "version": "1.0.0",
+  "description": "neumorphism style template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cp": " npx tailwindcss -i ./src/style.css -o ./dist/output.css",
+    "tw": " npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
+  },
+  "author": "truongtv26",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  }
+}
