@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Xshop</title>
+  <link rel="shortcut icon" href="images/logo-mini.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -15,13 +16,13 @@
 </head>
 
 <body>
-  <div id="wrapper" class="container mx-auto">
+  <div id="wrapper" class="container mx-auto duration-500 ease">
     <header class="flex justify-between py-6">
-      <section class="flex gap-20 md:gap-40 lg:gap-56">
+      <section class="flex gap-2 md:gap-10 lg:gap-56 antialiased">
         <section class="cursor-pointer">
-          <img class="" srcset="images/logo.png 3x" alt="">
+          <img class="visible" srcset="images/logo.png 3x" alt="">
         </section>
-        <ul class="flex items-center gap-10 text-lg text-[#5a5a5a] font-bold">
+        <ul class="hidden md:flex items-center gap-5 lg:gap-10 text-lg text-[#5a5a5a] font-bold">
           <li><a class="hover:text-black duration-500" href="#!">Shop</a></li>
           <li><a class="hover:text-black duration-500" href="#!">Shop</a></li>
           <li><a class="hover:text-black duration-500" href="#!">Shop</a></li>
@@ -29,19 +30,19 @@
           <li><a class="hover:text-black duration-500" href="#!"><i class="fa-solid fa-magnifying-glass"></i></a></li>
         </ul>
       </section>
-      <ul class="flex items-center gap-10 text-lg">
+      <ul class="hidden md:flex items-center gap-0 lg:gap-10 text-lg">
         <li><a class="" href="#!"><i class="fa-solid fa-moon"></i></a></li>
-        <li><a class="px-5 py-2  hover:text-black" href="#!">Login</a></li>
-        <li><a class="px-5 py-2 bg-black rounded-3xl text-white hover:opacity-80 duration-200" href="#!">Register</a>
+        <li><a class="px-5 py-2 hover:text-black" href="#!">Login</a></li>
+        <li><a class="px-5 py-2 bg-black  rounded-3xl text-white hover:opacity-80 duration-200" href="#!">Register</a>
         </li>
       </ul>
     </header>
 
 
     <!-- slide  -->
-    <div class="relative w-screen-lg h-[400px] mt-5">
+    <div class="relative w-screen-lg h-[200px] md:h-[350px] lg:h-[400px] mt-3 lg:mt-5">
       <!-- info slide -->
-      <p class="absolute left-1/2 top-3/4 translate-x-[-50%] text-white text-6xl">Lorem ipsum dolor</p>
+      <p class="absolute left-1/2 bottom-10 translate-x-[-50%] text-white text-6xl whitespace-nowrap">Lorem ipsum dolor</p>
       <!-- end info slide -->
       <!-- dot slide -->
       <div class="absolute left-1/2 bottom-3 translate-x-[-50%] flex gap-2">
@@ -66,10 +67,10 @@
       </a>
       <!-- end button next and prev -->
       <!-- end dot slide -->
-      <img class="w-full h-full select-none touch-none rounded-xl overflow-hidden"  draggable="false" src="images/slide.jpg" alt="">
+      <img class="w-full h-full select-none touch-none rounded-xl overflow-hidden" draggable="false"
+        src="images/slide.jpg" alt="">
     </div>
     <!-- end slide -->
   </div>
 </body>
-
 </html>
