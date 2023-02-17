@@ -4,7 +4,6 @@
 
 @layer base {
     body {
-        background-color: #f3f3f3;
         font-family: 'Roboto', sans-serif;
         transition: all 300ms linear;
         scroll-behavior: smooth;
@@ -16,4 +15,18 @@
         user-drag: none;
       }
        
+}
+
+@layer components {
+    .slide-show {
+        
+    }
+
+    .slide-next {
+        left: 100%;
+    }
+
+    .slide-prev {
+        right: 100%;
+    }
 }

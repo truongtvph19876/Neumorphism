@@ -10,3 +10,20 @@ img.forEach(element => {
         // event.preventDefault();
     });
 });
+
+
+let scrollPosition = 0;
+
+window.addEventListener('scroll', function() {
+
+  scrollPosition = window.scrollY;
+});
+
+window.addEventListener('scroll', function(e) {
+    e.preventDefault();
+  setTimeout(function() {
+    window.scrollTo(0, scrollPosition + 0);
+  }, 200);
+});
+
+  
