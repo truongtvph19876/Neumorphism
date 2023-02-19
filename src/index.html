@@ -19,76 +19,80 @@
 <body class="bg-bg-primary">
   <div id="wrapper" class="container mx-auto duration-500 ease h-[2000px]">
     <header
-      class="flex justify-between items-center px-4 md:px-0 py-4 md:py-6 gap-10 bg-bg-primary fixed z-10 top-0 container">
+      class="container fixed z-50 top-0 flex justify-between items-center px-4 md:px-0 py-4 md:py-6 gap-10 bg-bg-primary opacity-90">
       <section class="flex justify-between items-center gap-4 w-full antialiased">
-        <section class="cursor-pointer">
+        <section class="flex items-end gap-2 cursor-pointer">
+          <a class="block md:hidden" href="#!"><i class="fa-solid fa-list"></i></a>
           <img class="hidden md:block" srcset="images/logo.png 2x" alt="">
           <img class="block md:hidden" srcset="images/logo-mini.png 9x" alt="">
         </section>
         <ul class="hidden lg:flex items-center gap-4 lg:gap-8 text-lg text-[#5a5a5a] font-bold">
-          <li><a class="hover:text-black duration-500" href="#!">Shop</a></li>
-          <li><a class="hover:text-black duration-500" href="#!">Shop</a></li>
-          <li><a class="hover:text-black duration-500" href="#!">Shop</a></li>
-          <li><a class="hover:text-black duration-500" href="#!">Shop</a></li>
-
+          <li><a class="whitespace-nowrap hover:text-black duration-500" href="#!">Shop</a></li>
+          <li><a class="whitespace-nowrap hover:text-black duration-500" href="#!">Giảm giá</a></li>
+          <li><a class="whitespace-nowrap hover:text-black duration-500" href="#!">Liên hệ</a></li>
         </ul>
         <ul>
           <li>
-            <input type="text" class="w-96 md:w-72 flex-1 ml-8 border h-10 rounded-lg outline-none px-2">
-            <i class="fa-solid fa-magnifying-glass -ml-8"></i>
+            <form action="" method="POST">
+              <input type="text" class="w-96 md:w-72 flex-1 ml-8 border h-10 rounded-lg outline-none px-2" placeholder="Tìm kiếm...">
+              <button class="-ml-8"><i class="fa-solid fa-magnifying-glass cursor-pointer"></i></button>
+            </form>
           </li>
         </ul>
       </section>
       <ul class="hidden md:flex items-center gap-0 lg:gap-6 text-lg">
         <li><a class="" href="#!"><i class="fa-solid fa-moon"></i></a></li>
-        <li><a class=" px-5 py-2 hover:text-black" href="#!">Login</a></li>
-        <li><a class="px-5 py-2 bg-black  rounded-3xl text-white hover:opacity-80 duration-200" href="#!">Register</a>
+        <li><a class=" px-5 py-2 whitespace-nowrap hover:text-black" href="#!">Đăng nhập</a></li>
+        <li><a class="px-5 py-2 bg-black rounded-3xl text-white whitespace-nowrap hover:opacity-80 duration-200"
+            href="#!">Đăng ký</a>
         </li>
       </ul>
     </header>
 
 
     <!-- slide  -->
-    <div class="slides relative w-screen-lg h-[200px] md:h-[350px] lg:h-[400px] mt-20 md:mt-32">
+    <div
+      class="slides overflow-hidden relative w-screen-lg h-[200px] md:h-[350px] lg:h-[400px] mt-20 md:mt-32 rounded-xl">
       <!-- info slide and img-->
-      <div class="absolute slide slide-show w-full h-full">
+      <div class="absolute slide w-full h-full">
         <p
           class="absolute left-1/2 bottom-10 translate-x-[-50%] text-white text-xl md:text-4xl lg:text-6xl whitespace-nowrap">
-          Lorem ipsum dolor
+          Lorem ipsum dolor 1
         </p>
         <img class="w-full h-full rounded-xl" src="images/slide.jpg" alt="">
       </div>
-      <div class="absolute slide slide-next w-full h-full">
+      <div class="absolute slide w-full h-full">
         <p
           class="absolute left-1/2 bottom-10 translate-x-[-50%] text-white text-xl md:text-4xl lg:text-6xl whitespace-nowrap">
-          Lorem ipsum dolor
+          Lorem ipsum dolor 2
         </p>
-        <img class="w-full h-full rounded-xl" src="images/slide.jpg" alt="">
+        <img class="w-full h-full rounded-xl" src="https://www.w3schools.com/w3css/img_mountains_wide.jpg" alt="">
       </div>
-      <div class="absolute slide slide-prev w-full h-full">
+      <div class="absolute slide w-full h-full">
         <p
           class="absolute left-1/2 bottom-10 translate-x-[-50%] text-white text-xl md:text-4xl lg:text-6xl whitespace-nowrap">
-          Lorem ipsum dolor
+          Lorem ipsum dolor 3
         </p>
-        <img class="w-full h-full rounded-xl" src="images/slide.jpg" alt="">
+        <img class="w-full h-full rounded-xl" src="https://www.w3schools.com/howto/img_lights_wide.jpg" alt="">
       </div>
+
       <!-- end info slide and img -->
       <!-- dot slide -->
-      <div class="absolute left-1/2 bottom-1 translate-x-[-50%] flex gap-2">
+      <div class="dots absolute z-50 left-1/2 bottom-1 translate-x-[-50%] flex gap-2">
         <div class="bg-gray-300 w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 rounded-full cursor-pointer"></div>
         <div class="bg-gray-300 w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 rounded-full cursor-pointer"></div>
         <div class="bg-gray-300 w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 rounded-full cursor-pointer"></div>
       </div>
       <!-- end dot slide -->
       <!-- button next and prev -->
-      <a href="#!" class="btn-prev absolute top-1/2 -translate-y-1/2 left-2">
+      <a href="#!" class="btn-prev absolute z-40 top-1/2 -translate-y-1/2 left-2">
         <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M15.4881 4.43057C15.8026 4.70014 15.839 5.17361 15.5694 5.48811L9.98781 12L15.5694 18.5119C15.839 18.8264 15.8026 19.2999 15.4881 19.5695C15.1736 19.839 14.7001 19.8026 14.4306 19.4881L8.43056 12.4881C8.18981 12.2072 8.18981 11.7928 8.43056 11.5119L14.4306 4.51192C14.7001 4.19743 15.1736 4.161 15.4881 4.43057Z"
             fill="white" />
         </svg>
       </a>
-      <a href="#!" class="btn-next absolute top-1/2 -translate-y-1/2 right-2">
+      <a href="#!" class="btn-next absolute z-40 top-1/2 -translate-y-1/2 right-2">
         <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M8.51192 4.43057C8.82641 4.161 9.29989 4.19743 9.56946 4.51192L15.5695 11.5119C15.8102 11.7928 15.8102 12.2072 15.5695 12.4881L9.56946 19.4881C9.29989 19.8026 8.82641 19.839 8.51192 19.5695C8.19743 19.2999 8.161 18.8264 8.43057 18.5119L14.0122 12L8.43057 5.48811C8.161 5.17361 8.19743 4.70014 8.51192 4.43057Z"
