@@ -22,7 +22,7 @@ class Slide {
         // khởi tạo dots cho slide
         let dothtml = '';
         for (let index = 0; index < this.slide.length; index++) {
-            dothtml += '<div slide-index="' + index + '" class="dot w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 border-2 border-[#c0c0c0] rounded-full cursor-pointer"></div>';
+            dothtml += '<div slide-index="' + index + '" class="dot w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 border md:border-2 border-[#c0c0c0] rounded-full cursor-pointer"></div>';
         }
         this.dot.innerHTML = dothtml;
         let dots = this.dot.querySelectorAll('.dot');
