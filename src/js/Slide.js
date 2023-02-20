@@ -28,6 +28,9 @@ class Slide {
         let dots = this.dot.querySelectorAll('.dot');
         dots[currentIndex].classList.add('dot-current');
 
+        // khởi tạo nút bấm
+
+
     }
 
     nextSlide() {
@@ -80,7 +83,7 @@ let slideInterval;
 function slideAuto() {
     slideInterval = setInterval(() => {
         mySlide.nextSlide();
-    }, 2000);
+    }, 4000);
 }
 
 slideAuto();

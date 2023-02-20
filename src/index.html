@@ -17,12 +17,21 @@
 </head>
 
 <body class="bg-bg-primary">
-  <div id="wrapper" class="container mx-auto duration-500 ease h-[2000px]">
+  <div id="wrapper" class="container mx-auto px-1 duration-500 ease h-[2000px]">
     <header
-      class="container fixed z-50 top-0 flex justify-between items-center px-4 md:px-0 py-4 md:py-6 gap-10 bg-bg-primary opacity-90">
+      class="container fixed z-50 top-0 flex justify-between items-center px-4 py-4 md:py-6 gap-10 bg-bg-primary opacity-90">
       <section class="flex justify-between items-center gap-4 w-full antialiased">
         <section class="flex items-end gap-2 cursor-pointer">
-          <a class="block md:hidden" href="#!"><i class="fa-solid fa-list"></i></a>
+          <div class="block md:hidden">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.25 6C2.25 5.58579 2.58579 5.25 3 5.25H21C21.4142 5.25 21.75 5.58579 21.75 6C21.75 6.41421 21.4142 6.75 21 6.75H3C2.58579 6.75 2.25 6.41421 2.25 6ZM2.25 10C2.25 9.58579 2.58579 9.25 3 9.25H21C21.4142 9.25 21.75 9.58579 21.75 10C21.75 10.4142 21.4142 10.75 21 10.75H3C2.58579 10.75 2.25 10.4142 2.25 10ZM2.25 14C2.25 13.5858 2.58579 13.25 3 13.25H11C11.4142 13.25 11.75 13.5858 11.75 14C11.75 14.4142 11.4142 14.75 11 14.75H3C2.58579 14.75 2.25 14.4142 2.25 14ZM2.25 18C2.25 17.5858 2.58579 17.25 3 17.25H11C11.4142 17.25 11.75 17.5858 11.75 18C11.75 18.4142 11.4142 18.75 11 18.75H3C2.58579 18.75 2.25 18.4142 2.25 18Z"
+                fill="#1C274C" />
+              <path
+                d="M18.875 14.1184C20.5288 15.0733 21.3558 15.5507 21.4772 16.2395C21.5076 16.4118 21.5076 16.5882 21.4772 16.7605C21.3558 17.4493 20.5288 17.9267 18.875 18.8816C17.2212 19.8364 16.3942 20.3138 15.737 20.0746C15.5725 20.0148 15.4199 19.9266 15.2858 19.8141C14.75 19.3645 14.75 18.4097 14.75 16.5C14.75 14.5903 14.75 13.6355 15.2858 13.1859C15.4199 13.0734 15.5725 12.9852 15.737 12.9254C16.3942 12.6862 17.2212 13.1636 18.875 14.1184Z"
+                fill="#1C274C" />
+            </svg>
+          </div>
           <img class="hidden md:block" srcset="images/logo.png 2x" alt="">
           <img class="block md:hidden" srcset="images/logo-mini.png 9x" alt="">
         </section>
@@ -31,10 +40,11 @@
           <li><a class="whitespace-nowrap hover:text-black duration-500" href="#!">Giảm giá</a></li>
           <li><a class="whitespace-nowrap hover:text-black duration-500" href="#!">Liên hệ</a></li>
         </ul>
-        <ul>
+        <ul class="flex-1">
           <li>
-            <form action="" method="POST">
-              <input type="text" class="w-96 md:w-72 flex-1 ml-8 border h-10 rounded-lg outline-none px-2" placeholder="Tìm kiếm...">
+            <form action="" method="POST" class="flex px-4 md:px-0">
+              <input type="text" class="w-full md:w-72 flex-1 ml-8 border h-10 rounded-lg outline-none px-2"
+                placeholder="Tìm kiếm...">
               <button class="-ml-8"><i class="fa-solid fa-magnifying-glass cursor-pointer"></i></button>
             </form>
           </li>
@@ -52,7 +62,7 @@
 
     <!-- slide  -->
     <div
-      class="slides overflow-hidden relative w-screen-lg h-[200px] md:h-[350px] lg:h-[400px] mt-20 md:mt-32 rounded-xl">
+      class="slides overflow-hidden relative w-screen-lg h-[200px] md:h-[350px] lg:h-[400px] mt-20 md:mt-28 rounded-xl">
       <!-- info slide and img-->
       <div class="absolute slide w-full h-full">
         <p
@@ -78,27 +88,27 @@
 
       <!-- end info slide and img -->
       <!-- dot slide -->
-      <div class="dots absolute z-50 left-1/2 bottom-1 translate-x-[-50%] flex gap-2">
+      <div class="dots absolute z-50 left-1/2 bottom-3 translate-x-[-50%] flex gap-2">
         <div class="bg-gray-300 w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 rounded-full cursor-pointer"></div>
         <div class="bg-gray-300 w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 rounded-full cursor-pointer"></div>
         <div class="bg-gray-300 w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 rounded-full cursor-pointer"></div>
       </div>
       <!-- end dot slide -->
       <!-- button next and prev -->
-      <a href="#!" class="btn-prev absolute z-40 top-1/2 -translate-y-1/2 left-2">
+      <div class="btn-prev absolute z-40 top-1/2 -translate-y-1/2 left-2">
         <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M15.4881 4.43057C15.8026 4.70014 15.839 5.17361 15.5694 5.48811L9.98781 12L15.5694 18.5119C15.839 18.8264 15.8026 19.2999 15.4881 19.5695C15.1736 19.839 14.7001 19.8026 14.4306 19.4881L8.43056 12.4881C8.18981 12.2072 8.18981 11.7928 8.43056 11.5119L14.4306 4.51192C14.7001 4.19743 15.1736 4.161 15.4881 4.43057Z"
             fill="white" />
         </svg>
-      </a>
-      <a href="#!" class="btn-next absolute z-40 top-1/2 -translate-y-1/2 right-2">
+      </div>
+      <div class="btn-next absolute z-40 top-1/2 -translate-y-1/2 right-2">
         <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M8.51192 4.43057C8.82641 4.161 9.29989 4.19743 9.56946 4.51192L15.5695 11.5119C15.8102 11.7928 15.8102 12.2072 15.5695 12.4881L9.56946 19.4881C9.29989 19.8026 8.82641 19.839 8.51192 19.5695C8.19743 19.2999 8.161 18.8264 8.43057 18.5119L14.0122 12L8.43057 5.48811C8.161 5.17361 8.19743 4.70014 8.51192 4.43057Z"
             fill="white" />
         </svg>
-      </a>
+      </div>
       <!-- end button next and prev -->
     </div>
     <!-- end slide -->
